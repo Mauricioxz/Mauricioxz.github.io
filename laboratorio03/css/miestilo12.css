@@ -1,0 +1,90 @@
+.contenedor {
+  background-color: black;
+}
+
+/* Aplicaremos degradados a las cajas */
+/* Generamos un degradado de abajo hacia arriba */
+.degradado1 {
+  width: 500px;
+  height: 250px;
+  background: repeating-linear-gradient(to bottom, red, yellow);
+}
+
+/* Generamos un degradado de izquierda a derecha */
+.degradado2 {
+  width: 500px;
+  height: 250px;
+  background: repeating-linear-gradient(to left, green, yellow);
+}
+/* Generamos un degradado de derecha a izquierda */
+.degradado3 {
+  width: 500px;
+  height: 250px;
+  background: repeating-linear-gradient(to right, blue, yellow);
+}
+/* Generamos un degradado de arriba hacia abajo */
+.degradado4 {
+  width: 500px;
+  height: 250px;
+  background: repeating-linear-gradient(to top, red, white);
+}
+/* Generamos un degradado de muchos colores de izquierda a derecha*/
+.degradado5 {
+  width: 500px;
+  height: 250px;
+  background: repeating-linear-gradient(
+    to left,
+    green,
+    yellow,
+    red,
+    blue,
+    orange,
+    purple,
+    white
+  );
+}
+/* Aplicaremos un degradado radial de muchos colores */
+.degradado6 {
+  width: 500px;
+  height: 250px;
+  background: repeating-radial-gradient(
+    green,
+    yellow,
+    red,
+    blue,
+    orange,
+    purple,
+    white
+  );
+}
+/* Aplicamos los degradados utilizando los ángulos */
+.degradado7 {
+  width: 500px;
+  height: 250px;
+  background: repeating-linear-gradient(180deg, red, yellow);
+}
+
+/* Generamos un degradado de izquierda a derecha */
+.degradado8 {
+  width: 500px;
+  height: 250px;
+  background: repeating-linear-gradient(-90deg, green, yellow);
+}
+/* Generamos un degradado de derecha a izquierda */
+.degradado9 {
+  width: 500px;
+  height: 250px;
+  background: repeating-linear-gradient(90deg, blue, yellow);
+}
+/* Generamos un degradado de arriba hacia abajo */
+.degradado10 {
+  width: 500px;
+  height: 250px;
+  background: repeating-linear-gradient(0deg, red, white);
+}
+/* Generamos un degradado hacia un ángulo en específico */
+.degradado11 {
+  width: 500px;
+  height: 250px;
+  background: repeating-linear-gradient(45deg, purple, pink);
+}

@@ -1,0 +1,94 @@
+/* Importamos letras de google */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
+* {
+  padding: 15px;
+}
+
+body {
+  background-color: red;
+}
+.contenedor {
+  background-color: white;
+  border-style: solid;
+}
+/* Agregamos tipos de letra */
+.parrafo1 {
+  font-family: "Times New Roman", Times, serif;
+  border-style: solid;
+}
+.parrafo2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  border-style: solid;
+}
+.parrafo3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-style: solid;
+}
+/* Aplicamos estilos a la letra */
+.parrafo4 {
+  font-style: italic;
+  border-style: solid;
+}
+.parrafo5 {
+  font-style: oblique;
+  border-style: solid;
+}
+.parrafo6 {
+  font-style: normal;
+  border-style: solid;
+}
+.parrafo7 {
+  font-weight: bold;
+  border-style: solid;
+}
+.parrafo8 {
+  font-weight: bolder;
+  border-style: solid;
+}
+.parrafo9 {
+  font-variant: small-caps;
+}
+.parrafo10 {
+  font-variant: normal;
+}
+.parrafo11 {
+  font-size: 15px;
+}
+
+/* Llamamos a la fuente de Google */
+.parrafo12 {
+  font-family: "Dancing Script", cursive;
+}
+
+/* Utilizamos las fuentes descargadas */
+@font-face {
+  font-family: "Astloch regular";
+  src: url("/fonts/Astloch-Regular.ttf");
+}
+@font-face {
+  font-family: "Reggaeone regular";
+  src: url("/fonts/ReggaeOne-Regular.ttf");
+}
+@font-face {
+  font-family: "Astloch bold";
+  src: url("/fonts/Astloch-Bold.ttf");
+}
+@font-face {
+  font-family: "Star Jedi";
+  src: url("/fonts/Starjout.ttf");
+}
+
+/* Llamamos a las fuentes descargadas desde google */
+.parrafo13 {
+  font-family: "Astloch regular";
+}
+.parrafo14 {
+  font-family: "Astloch bold";
+}
+.parrafo15 {
+  font-family: "Reggaeone regular";
+}
+.parrafo16 {
+  font-family: "Star Jedi";
+}

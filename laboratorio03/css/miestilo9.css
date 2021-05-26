@@ -1,0 +1,94 @@
+body {
+  background-color: blanchedalmond;
+}
+.contenedor {
+  background-color: whitesmoke;
+}
+/* Agregamos color al texto */
+.parrafocolor {
+  color: yellowgreen;
+}
+/* Alineamos el texto dentro de los párrafos */
+.parrafoderecha {
+  text-align: right;
+}
+/* Alineamos el texto dentro de los párrafos */
+.parrafoizquierda {
+  text-align: left;
+}
+/* Alineamos el texto dentro de los párrafos */
+.parrafocentro {
+  text-align: center;
+}
+/* Alineamos el texto dentro de los párrafos */
+.parrafojustificado {
+  text-align: justify;
+}
+/* Agregamos decoración al texto */
+.parrafosubrayado {
+  text-decoration: underline;
+}
+/* Agregamos decoración al texto */
+.parrafosobrerayado {
+  text-decoration: overline;
+}
+/* Agregamos decoración al texto */
+.parrafotachado {
+  text-decoration: line-through;
+}
+/* Agregamos decoración al texto */
+.parrafosinestilo {
+  text-decoration: none;
+}
+/* Agregamos transformaciones al párrafo */
+.parrafomayuscula {
+  text-transform: uppercase;
+}
+/* Agregamos transformaciones al párrafo */
+.parrafominuscula {
+  text-transform: lowercase;
+}
+/* Agregamos transformaciones al párrafo */
+.parrafocapital {
+  text-transform: capitalize;
+}
+/* Agregamos espacio a las letras del párrafo */
+.parrafoespacionormal {
+  letter-spacing: 5px;
+}
+/* Agregamos espacio a las letras del párrafo */
+.parrafoespaciocomprimido {
+  letter-spacing: -5px;
+}
+/* Agregamos espacio a las letras del párrafo */
+.parrafoespaciolineas {
+  line-height: 0.9px;
+}
+/* Agregamos espacio a las letras del párrafo */
+/* VERIFICAR ESTO */
+.parrafoespacioarribacomprimido {
+  line-height: -1.9px;
+}
+/* Agregamos espacio a la separación entre las letras del párrafo */
+.parrafoespacioletra {
+  word-spacing: 10px;
+}
+/* Agregamos espacio a la separación entre las letras del párrafo */
+.parrafoespacioletracomprimido {
+  word-spacing: -10px;
+}
+/* Agregamos separación al espacio en blanco */
+.parrafoespacio {
+  white-space: pre-wrap;
+}
+.parrafosangria {
+  text-indent: 50px;
+}
+.parrafosombra {
+  text-shadow: 2px 2px yellowgreen;
+}
+.parrafosombragrande {
+  text-transform: uppercase;
+  font-size: 25px;
+  text-shadow: 5px 5px 5px red;
+}

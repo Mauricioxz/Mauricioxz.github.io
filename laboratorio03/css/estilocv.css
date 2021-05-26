@@ -1,0 +1,156 @@
+body {
+  background-color: rgb(219, 219, 219);
+}
+h1 {
+  font-family: "Bebas Neue";
+  color: rgb(134, 63, 53);
+  font-size: 50px;
+  text-align: center;
+  text-decoration: underline;
+  margin-top: -5px;
+}
+
+h1:hover {
+  color: orangered;
+}
+
+h1:active {
+  background-color: rgb(211, 78, 30);
+  color: antiquewhite;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+  border-radius: 15%;
+}
+img:hover {
+  border-radius: 0%;
+}
+
+h2 {
+  font-family: "Bebas Neue";
+  color: #c2331a;
+  font-weight: bolder;
+  font-size: 35px;
+}
+h2:hover {
+  text-decoration: underline;
+}
+h2:active {
+  color: peru;
+}
+
+h3:hover {
+  color: blue;
+  font-size: 20px;
+  transition: 0.4s;
+}
+
+p {
+  font-size: 20px;
+  text-align: justify;
+}
+p:hover {
+  color: rgb(204, 88, 45);
+}
+p:active {
+  color: rgb(83, 194, 79);
+}
+
+.caja1 {
+  background-color: rgb(240, 234, 223);
+  width: 450px;
+  height: 250px;
+  text-align: center;
+  margin-left: 15px;
+  border-radius: 15px;
+  margin-top: -50px;
+}
+.caja2 {
+  background-color: rgb(240, 234, 223);
+  width: 450px;
+  height: 250px;
+  text-align: center;
+  margin-left: 500px;
+  margin-top: -280px;
+  border-radius: 15px;
+}
+.caja3 {
+  background-color: rgb(240, 234, 223);
+  width: 450px;
+  height: 250px;
+  text-align: center;
+  margin-left: 1000px;
+  margin-top: -280px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+}
+
+.caja2 ul {
+  text-align: justify;
+  line-height: 25px;
+}
+
+.caja3 ul {
+  text-align: justify;
+  line-height: 25px;
+  margin-top: -10px;
+}
+
+ul li {
+  list-style-type: none;
+  font-style: italic;
+}
+
+i {
+  font-size: 20px;
+}
+
+.fa-check-circle {
+  color: rgb(64, 189, 60);
+}
+
+.fa-facebook {
+  color: #3b5998;
+}
+
+.fa-instagram {
+  color: #e1306c;
+}
+
+.fa-phone {
+  color: #68217a;
+}
+
+.fa-envelope {
+  color: #dd4b39;
+}
+.fa-github {
+  color: #333;
+}
+
+ul li:hover {
+  color: blue;
+  font-weight: bolder;
+  font-size: 18px;
+  transition: 0.4s;
+}
+
+hr {
+  margin-top: -15px;
+}
+
+footer {
+  background-color: rgb(194, 194, 194);
+  color: rgb(121, 121, 121);
+  text-align: center;
+  font-size: 25px;
+  font-weight: bolder;
+  margin-bottom: 0;
+}
+
+footer:hover {
+  background-color: rgb(211, 78, 30);
+  color: antiquewhite;
+}
