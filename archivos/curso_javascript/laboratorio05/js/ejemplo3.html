@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 3</title>
+    <script type="text/javascript">
+    //definiendo e inicializando variables
+    var sb=0, bon=0, des=0, sf=0, cat="";
+    //capturando valores
+    sb=parseFloat(prompt("Ingrese el sueldo básico"));
+    cat=prompt("Ingrese la categoría A o B o C o D");
+    //condición + realizando operaciones
+    if(cat=="a" || cat=="A"){
+        bon=sb*0.03;
+        des=sb*0.01;
+    }else{
+        if(cat=="b" || cat=="B"){
+            bon=sb*0.05;
+            des=sb*0.02;
+        }else{
+            if(cat=="c" || cat=="C"){
+                bon=sb*0.07;
+                des=sb*0.03;
+            }else{
+                if(cat=="d" || cat=="D"){
+                    bon=sb*0.09;
+                    des=sb*0.04;
+                }else{
+                    bon=0;
+                    des=0;
+                }
+            }
+        }
+    }
+    sf=sb+bon-des;
+    //mostrando resultados
+    document.write("El sueldo básico es: "+sb+"<br>");
+    document.write("La bonificación es: "+bon+"<br>");
+    document.write("El descuento es: "+des+"<br>");
+    document.write("El sueldo final es: "+sf+"<br>");
+    document.write("<hr>");
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
