@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Parte 5</title>
+    <script type="text/javascript">
+    //---ARREGLOS---
+    //Los arreglos son espacios de memoria RAM que permiten almacenar más de un valor
+    //a la vez, pero de un solo tipo de dato.
+    //Los arreglos se clasifican en:
+    //Arreglos Unidimensionales --> Vectores
+    //Arreglos Multidimensionales --> Matrices
+    
+    //-VECTORES-
+    //Son arreglos de una dimensión
+    //'Creación de un Vector'
+    // var NombreVector=[valores];
+
+    //Ejemplo 1
+    //Crear un vector que permita almacenar las estaciones del año
+    var est=["Verano","Otoño","Invierno","Primavera"];
+
+    //Conocer el tamaño del vector
+    //nombrevector.length;
+    //Mostrando el tamaño del vector
+    document.write("El tamaño del vector es: "+est.length);
+    document.write("<hr>");
+
+    //Si quiero mostrar el segundo valor del vector --> Siempre trabajas con el Índice.
+    // Verano --> Indice: 0 --> Posición: 1
+    // Otoño --> Indice: 1 --> Posición: 2
+    // Invierno --> Indice: 2 --> Posición: 3
+    // Primavera --> Indice: 3 --> Posición: 4
+
+    //Y ¿Cómo lo muestro?
+    document.write("El segundo valor del vector es: "+est[1]);
+    document.write("<hr>");
+
+    //Quiero mostrar todos los valores del vector
+    for(var i=0;i<est.length;i++){
+        document.write("El valor "+(i+1)+" del vector es: "+est[i]+"<br>");
+    }
+    document.write("<hr>");
+
+    //Añadir un elemento al final del vector
+    est.push("Ya no hay más estaciones");
+    for(var i=0;i<est.length;i++){
+        document.write("El valor "+(i+1)+" del vector es: "+est[i]+"<br>");
+    }
+    document.write("<hr>");
+
+    //Eliminar un valor al final del vector
+    est.pop();
+    for(var i=0;i<est.length;i++){
+        document.write("El valor "+(i+1)+" del vector es: "+est[i]+"<br>");
+    }
+    document.write("<hr>");
+
+    //Añadir un valor al inicio del vector
+    est.unshift("Este valor es antes de todo");
+    for(var i=0;i<est.length;i++){
+        document.write("El valor "+(i+1)+" del vector es: "+est[i]+"<br>");
+    }
+    document.write("<hr>");
+
+    //Eliminar un elemento al inicio del vector
+    est.shift();
+    for(var i=0;i<est.length;i++){
+        document.write("El valor "+(i+1)+" del vector es: "+est[i]+"<br>");
+    }
+    document.write("<hr>");
+
+    //Encontrar el indice de un vector
+    var indice=-1;
+    indice=est.indexOf("Otoño");
+    document.write("El indice de otoño es: "+indice);
+    document.write("<hr>");
+
+    //Eliminar un elemento de acuerdo al indice
+    est.splice(indice,1); //se puede eliminar más de un elemento
+    for(var i=0;i<est.length;i++){
+        document.write("El valor "+(i+1)+" del vector es: "+est[i]+"<br>");
+    }
+    document.write("<hr>");
+
+    //Agregar un elemento en un indice específico
+    est[indice]="Nuevo Otoño";
+    for(var i=0;i<est.length;i++){
+        document.write("El valor "+(i+1)+" del vector es: "+est[i]+"<br>");
+    }
+    document.write("<hr>");
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

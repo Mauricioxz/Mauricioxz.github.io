@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Parte 1</title>
+    <script type="text/javascript">
+    //Operaciones
+    //Son cálculos aritméticos utilizando los operadores aritméticos
+    // + --> suma
+    // - --> resta
+    // * --> multiplicación
+    // / --> división
+
+    //Ejemplo 1
+    //Desarrollar una aplicación que permita calcular la suma de dos números
+    //¿Cuántas variables necesito?
+    //3
+    //¿Qué tipo de datos necesito?
+    //Entero
+    //Declarando variables
+    var numero1;
+    var num_2;
+    var sum;
+    //Inicializar variables
+    numero1=0;
+    num_2=0;
+    sum=0;
+    //Asignando valores
+    numero1=6;
+    num_2=7;
+    //Realizando operaciones
+    sum=numero1+num_2;
+    //Mostrando valores
+    alert("La suma es: "+sum);
+
+    document.write('La suma es: '+sum+"<br>");
+    document.write('<hr>')
+
+    //Ejemplo 2
+    //Desarrollar una aplicación que permita calcular el promedio de 4 notas
+    //si se sabe que las notas son 18, 17, 13 y 15
+    //¿Cuántas variables necesito?
+    //5
+    //¿Qué tipo de datos necesito?
+    //Real
+    var n1;
+    var n2;
+    var n3;
+    var n4;
+    var prom;
+    //Inicializar variables
+    n1=0;
+    n2=0;
+    n3=0;
+    n4=0;
+    prom=0;
+    //Asignando valores
+    n1=18;
+    n2=17;
+    n3=13;
+    n4=15;
+    //Realizando operaciones
+    prom=(n1+n2+n3+n4)/4;
+    //Mostrando valores
+    alert("El promedio es: "+prom);
+    
+    document.write('El promedio es: '+prom+'<br>');
+    document.write('<hr>')
+
+    //Ejemplo 3
+    //Desarrollar una aplicación que permita mostrar un mensaje de saludo con tu nombre
+    //si se sabe que el nombre es Mauricio
+    //¿Cuántas variables necesito?
+    //1
+    //¿Qué tipo de dato necesito?
+    //Texto
+    //Declarando la variable
+    var nom;
+    //Inicializamos la variable
+    nom="";
+    //Asignamos valores
+    nom="Mauricio";
+    //Mostrando valores 
+    alert('Hola como estás '+nom+' , espero que muy bien');
+    
+    document.write("Hola como estás "+nom+" , espero que muy bien");
+    document.write("<hr>");
+
+    //Ejemplo 4
+    //Desarrollar una aplicación que permita calcular el sueldo final de un trabajador si se sabe que
+    //su sueldo básico es de 1000 soles y recibe una bonificación del 7%
+    //y se le aplica un descuento del 4%. Mostrar todos los valores.
+    //¿Cuántas variables necesito?
+    //4
+    //¿Qué tipo de datos necesito?
+    //Real
+    //Definiendo variables
+    var sbas;
+    var sboni;
+    var sdes;
+    var sfin;
+    //Inicializando variables
+    sbas=0;
+    sboni=0;
+    sdes=0;
+    sfin=0;
+    //Asignando valores
+    sbas=1000;
+    //Realizando operaciones
+    sboni=sbas*0.07;
+    sdes=sbas*0.04;
+    sfin=sbas+sboni-sdes;
+    //Mostrando resultados
+    alert("El sueldo básico es: "+sbas);
+    alert("La bonificación es: "+sboni);
+    alert("El descuento es: "+sdes);
+    alert("El sueldo final es: "+sfin+" soles");
+
+    document.write("El sueldo final es: "+sbas+"<br>");
+    document.write("La bonificación es: "+sboni+"<br>");
+    document.write("El descuento es: "+sdes+"<br>");
+    document.write("El sueldo final es: "+sfin+"<br>");
+    document.write("<hr>");
+
+    //Ejemplo 5
+    //Desarrollar una aplicación que permita calcular el total a pagar si se sabe que
+    //la cantidad que se compra es 10 y el precio del producto comprado es 125.80 y 
+    //además se debe de calcular el IGV que es 18% del subtotal. Mostrar todos los resultados.
+    //¿Cuántas variables necesito?
+    //4
+    //¿Qué tipos de datos necesito?
+    //Real
+    //Definiendo variables
+    var cant;
+    var pre;
+    var sbt;
+    var igv;
+    var tot;
+    //Inicializando variables
+    cant=0;
+    pre=0;
+    sbt=0;
+    igv=0;
+    tot=0;
+    //Asignando variables
+    cant=10;
+    pre=125.80;
+    //Realizando operaciones
+    sbt=cant*pre;
+    igv=sbt*0.18;
+    tot=sbt+igv;
+    //Mostrando resultados
+    alert("La cantidad es: "+cant);
+    alert("El precio del producto es: "+pre);
+    alert("El subtotal es: "+sbt);
+    alert("El IGV es: "+igv);
+    alert("El total a pagar es: "+tot);
+
+    document.write('La cantidad es: '+cant+"<br>");
+    document.write('El precio es: '+pre+"<br>");
+    document.write('El subtotal es: '+sbt+"<br>");
+    document.write('El IGV es: '+igv+"<br>");
+    document.write("El total a pagar es: "+tot+"<br>");
+    document.write('<a href="index.html">Regresar</a><br>');
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

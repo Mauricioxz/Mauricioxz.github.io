@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Parte 3</title>
+    <script type="text/javascript">
+    //---Estructura Selectiva---
+    //Se basa en la evaluación de casos, estos casos pueden ser números o texto.
+    //SINTAXIS
+    // switch(variable){
+    //     case valor1:
+    //     ...programa...
+    //     break;
+    //     case valor2:
+    //     ...programa...
+    //     break;
+    //     case valorn:
+    //     ...programa...
+    //     break;
+    //     default:
+    //     ...programa...
+    //     break;
+    // }
+    //valor1,2,n deber de ser del mismo tipo de dato de la variable.
+    //Podemos a un 'Si Anidado' por una 'Estructura Selectiva', siempre y cuando
+    //la estructura anidada no tenga conectores lógicos en las condiciones.
+
+    //Ejemplo 1
+    //Desarrollar una aplicación que permita calcular el sueldo final de un trabajador si se sabe que
+    //su sueldo básico se ingresa por teclado. Adicional a eso, se va a calcular una bonificación y
+    //un descuento dependiendo de la categoría a la que pertenezca, como se muestra a continuación:
+    // Categoría   Bonificación    Descuento
+    // A           7%              5%
+    // B           9%              7%
+    // C           11%             9%
+    //Mostrar todos los resultados.
+    
+    //¿Cuántas variables necesito?
+    //5
+    //¿qué tipo de datos necesito?
+    //Real y Texto
+    //¿Cuáles serían las variables?
+    // sb, des, bon, cat, sf
+    //¿Qué variables voy a leer?
+    // sb, cat
+    //Definiendo e inicializando variables
+    var sb=0, des=0, bon=0, cat="", sf=0;
+    //capturando valores
+    sb=parseFloat(prompt("Ingrese el sueldo básico del trabajador:"));
+    cat=prompt("Ingrese la categoría [a] o [b] o [c]:");
+    //Selectiva
+    switch(cat.toLowerCase()){ //toLowerCase -> convierte todo a minúscula
+        case "a":
+        bon=sb*0.07;
+        des=sb*0.05;
+        break;
+        case "b":
+        bon=sb*0.09;
+        des=sb*0.07;
+        break;
+        case "c":
+        bon=sb*0.11;
+        des=sb*0.09;
+        break;
+        default:
+        bon=0;
+        des=0;
+        break;
+    }
+    //realizando operaciones
+    sf=sb+bon-des;
+    //mostrando resultados
+    alert("El sueldo básico es:"+sb);
+    alert("La bonificaión es:"+bon);
+    alert("El descuento es:"+des);
+    alert("El sueldo final es:"+sf);
+
+    //Ejemplo 2
+    //Desarrollar una aplicación que permita ingresar el precio de un producto y la cantidad a comprar
+    //y dependiendo de la categoría se aplicará un descuento al subtotal, tal como se muestra en la siguiente tabla:
+    // CATEGORÍA   DESCUENTO
+    // 1           3%
+    // 2           5%
+    // 3           7%
+    // 4           9%
+    //Mostrar todos los resultados.
+    //¿Cuántas variables necesito?
+    //6
+    //¿Qué tipo de datos necesito?
+    //Real y Entero
+    //¿Cuales serían las variables?
+    // sb, cat, des, pre, can, tot
+    //¿Qué variables vamos a leer?
+    // pre, can, cat
+    //Definiendo e inicializando variables
+    var pre=0, can=0, sb=0, cat=0, des=0, tot=0;
+    //capturando valores
+    pre=parseFloat(prompt("Ingrese el precio del producto:"));
+    can=parseFloat(prompt("Ingrese la cantidad a comprar:"));
+    cat=parseInt(prompt("Ingrese la categoría [1] o [2] o [3] o [4]"));
+    //realizando operaciones
+    sbt=pre*can;
+    //Selectiva
+    switch(cat){
+        case 1:
+        des=sbt*0.03;
+        break;
+        case 2:
+        des=sbt*0.05;
+        break;
+        case 3:
+        des=sbt*0.07;
+        break;
+        case 4:
+        des=sbt*0.09;
+        break;
+        default:
+        des=0;
+        break;
+    }
+    tot=sbt-des;
+    //mostrando resultados
+    document.write("El subtotal es: "+sbt+"<br>");
+    document.write("El descuento es: "+des+"<br>");
+    document.write("El total es: "+tot+"<br>");
+    document.write("<hr>");
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

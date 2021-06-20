@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Parte 4</title>
+    <script type="text/javascript">
+    //---FUNCIONES Y PROCEDIMIENTOS---
+    //Los procedimientos y funciones permiten agrupar código de forma modular de tal manera que podemos
+    //tener un bloque de código que realice ciertas acciones.
+    //--FUNCIONES--
+    //Las funciones devuelven un único valor.
+    //SINTAXIS
+    // function NombreFuncion(parámetros){
+    //     ...programamos...
+    //     return valor;
+    // }
+    //
+    //-Parámetros:
+    //Son valores que pueden estar o no dentro de la función.
+    //Si es que estuvieran en la función son valores que necesita la función para realizar una operación
+    //o una acción.
+    //-Return:
+    //Es el valor que va a devolver la función, este valor será importante porque define el tipo de dato
+    //de la función.
+
+
+    //Ejemplo 1
+    //Desarrollar una aplicación que permita ingresar 2 números y luego calcule las 4 operaciones básicas.
+    //¿Cuántas variables necesito?
+    // 6
+    //¿Qué tipo de datos necesito?
+    // Reales
+    //¿Cuáles serían las variables?
+    // n1, n2, sum, res, mul, div
+    //¿Qué variables voy a leer?
+    // n1, n2
+    
+    //Declarando funciones
+    function calcularsuma(num1,num2){
+        return num1+num2;
+    }
+    function calcularresta(num1,num2){
+        var r=0;
+        r=num1-num2;
+        return r;
+    }
+    function calcularmultiplicacion(num1,num2){
+        return num1*num2;
+    }
+    function calculardivision(num1,num2){
+        var d=0;
+        d=num1/num2;
+        return d;
+    }
+
+    //Declarando e inicializando variables
+    var n1=0, n2=0, sum=0, res=0, mul=0, div=0;
+    //Capturando valores
+    n1=parseFloat(prompt("Ingrese el número 1:"));
+    n2=parseFloat(prompt("Ingrese el número 2:"));
+    //Llamando a las funciones para calcular
+    sum=calcularsuma(n1,n2);
+    res=calcularresta(n1,n2);
+    mul=calcularmultiplicacion(n1,n2);
+    div=calculardivision(n1,n2);
+    //Mostrando resultados
+    document.write("La suma es:"+sum+"<br>");
+    document.write("La resta es:"+res+"<br>");
+    document.write("La multiplicación es:"+mul+"<br>");
+    document.write("La división es:"+div+"<br>");
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

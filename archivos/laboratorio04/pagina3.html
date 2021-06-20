@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Parte 1</title>
+    <script type="text/javascript">
+    //Variables
+    //Una variable es un espacio de memoria RAM que permite almacenar un único valor,
+    //con un tipo de dato específico, durante la ejecución del programa la variable
+    //puede ir cambiando
+    //VAR
+    //Sintaxis
+    //var nombrevariable;
+
+    //Cuando declaramos una variable no podemos utilizar espacios en blanco
+    //Para declarar una variable puedo asignarle cualquier nombre, pero de
+    //preferencia hay que asignarles nombres relacionados con los valores
+    //que se van a almacenar en las variables
+    //Como recomendación podemos tener 1,2,3 y 4 caracteres para declarar una variable
+
+    //Identificar variables
+    //Saber cuántas variables necesito para poder realizar un problema
+
+    //Ejemplo 1
+    //Desarrollar una aplicación que permita calcular la suma de dos números
+    //¿Cuántas variables necesito?
+    //3
+
+    //Ejemplo 2
+    //Desarrollar una aplicación que permita calcular el promedio de 4 notas
+    //¿Cuántas variables necesito?
+    //5
+
+    //Ejemplo 3
+    //Desarrollar una aplicación que permita mostrar un mensaje de saludo con tu nombre
+    //¿Cuántas variables necesito?
+    //1
+
+    //Tipo de Datos
+    //Entero --> números enteros --> 5, 27, -9, -121
+    //Real --> números reales --> 5, 7.89, -17, -78.36
+    //Texto --> cadenas de texto --> "Hola" "Mario" "Ella no te ama xd"
+    //Lógico --> verdad --> verdadero o falso
+
+    //Proceso para definir una variable es primero definir la variable y luego inicializar
+    //Iniciando las variables
+    // Entero o real --> 0
+    // Texto --> "" o ''
+    // Lógico --> false
+
+    //Ejemplo 1
+    //Desarrollar una aplicación que permita calcular la suma de dos números
+    //si se sabe que los números son 6 y 7
+    //¿Cuántas variables necesito?
+    //3
+    //¿Qué tipo de datos necesito?
+    var numero1;
+    var num_2;
+    var sum;
+    //Inicializar variables
+    numero1=0;
+    num_2=0;
+    sum=0;
+
+
+    //Ejemplo 2
+    //Desarrollar una aplicación que permita calcular el promedio de 4 notas
+    //¿Cuántas variables necesito?
+    //5
+    //¿Qué tipo de datos necesito?
+    //Real
+    var n1;
+    var n2;
+    var n3;
+    var n4;
+    var prom;
+    //Inicializar variables
+    n1=0;
+    n2=0;
+    n3=0;
+    n4=0;
+    prom=0;
+
+
+
+    //Ejemplo 3
+    //Desarrollar una aplicación que permita mostrar un mensaje de saludo con tu nombre
+    //¿Cuántas variables necesito?
+    //1
+    //¿Qué tipo de dato necesito?
+    //Texto
+    //Declarando la variable
+    var nom;
+    //Inicializamos la variable
+    nom="";
+
+    //Asignando valores 
+    //Es darle un valor ya conocido a las variables después de haber sido declarada e
+    //inicializada.
+
+    //Ejemplo 1
+    //Desarrollar una aplicación que permita calcular la suma de dos números
+    //¿Cuántas variables necesito?
+    //3
+    //¿Qué tipo de datos necesito?
+    var numero1;
+    var num_2;
+    var sum;
+    //Inicializar variables
+    numero1=0;
+    num_2=0;
+    sum=0;
+    //Asignando valores
+    numero1=6;
+    num_2=7;
+    
+
+    //Ejemplo 2
+    //Desarrollar una aplicación que permita calcular el promedio de 4 notas
+    //si se sabe que las notas son 18, 17, 13 y 15
+    //¿Cuántas variables necesito?
+    //5
+    //¿Qué tipo de datos necesito?
+    //Real
+    var n1;
+    var n2;
+    var n3;
+    var n4;
+    var prom;
+    //Inicializar variables
+    n1=0;
+    n2=0;
+    n3=0;
+    n4=0;
+    prom=0;
+    //Asignando valores
+    n1=18;
+    n2=17;
+    n3=13;
+    n4=15;
+
+    //Ejemplo 3
+    //Desarrollar una aplicación que permita mostrar un mensaje de saludo con tu nombre
+    //si se sabe que el nombre es Mauricio
+    //¿Cuántas variables necesito?
+    //1
+    //¿Qué tipo de dato necesito?
+    //Texto
+    //Declarando la variable
+    var nom;
+    //Inicializamos la variable
+    nom="";
+    //Asignamos valores
+    nom="Mauricio";
+
+    //Concatenando valores
+    //Concatenar quiere decir que vamos a unir un texto con el valor de una variable
+    //Para poder concatenar utilizamos el signo de "+"
+
+    //Ejemplo 1
+    //Desarrollar una aplicación que permita calcular la suma de dos números
+    //¿Cuántas variables necesito?
+    //3
+    //¿Qué tipo de datos necesito?
+    var numero1;
+    var num_2;
+    var sum;
+    //Inicializar variables
+    numero1=0;
+    num_2=0;
+    sum=0;
+    //Asignando valores
+    numero1=6;
+    num_2=7;
+    //Mostrando valores
+    alert("El número 1 es: "+numero1);
+    alert("El número 2 es: "+num_2);
+
+    document.write('El número 1 es: '+numero1+"<br>");
+    document.write('El número 2 es: '+num_2+"<br>");
+    document.write('<hr>')
+
+
+    //Ejemplo 2
+    //Desarrollar una aplicación que permita calcular el promedio de 4 notas
+    //si se sabe que las notas son 18, 17, 13 y 15
+    //¿Cuántas variables necesito?
+    //5
+    //¿Qué tipo de datos necesito?
+    //Real
+    var n1;
+    var n2;
+    var n3;
+    var n4;
+    var prom;
+    //Inicializar variables
+    n1=0;
+    n2=0;
+    n3=0;
+    n4=0;
+    prom=0;
+    //Asignando valores
+    n1=18;
+    n2=17;
+    n3=13;
+    n4=15;
+    //Mostrando valores
+    alert("La nota 1 es: "+n1);
+    alert("La nota 2 es: "+n2);
+    alert("La nota 3 es: "+n3);
+    alert("La nota 4 es: "+n4);
+    
+    document.write('La nota 1 es: '+n1+'<br>');
+    document.write('La nota 2 es: '+n2+'<br>');
+    document.write('La nota 3 es: '+n3+'<br>');
+    document.write('La nota 4 es: '+n4+'<br>');
+    document.write('<hr>')
+
+    //Ejemplo 3
+    //Desarrollar una aplicación que permita mostrar un mensaje de saludo con tu nombre
+    //si se sabe que el nombre es Mauricio
+    //¿Cuántas variables necesito?
+    //1
+    //¿Qué tipo de dato necesito?
+    //Texto
+    //Declarando la variable
+    var nom;
+    //Inicializamos la variable
+    nom="";
+    //Asignamos valores
+    nom="Mauricio";
+    //Mostrando valores 
+    alert('El nombre es: '+nom);
+    
+    document.write("El nombre es: "+nom);
+    document.write("<hr>");
+    document.write('<a href="index.html">Regresar</a><br>');
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
