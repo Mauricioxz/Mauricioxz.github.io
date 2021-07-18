@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase - Parte 1</title>
+    <link rel="stylesheet" type="text/css" href="css/formulario.css">
+</head>
+<body>
+    <!-- ------------------------    T       A       R       E        A     ------------------------------------->
+    <!-- Crear un javascript 'alumno.js' y 'bibliotecaalumno.js' para registrar los datos ingresados en este formulario. -->
+    <!-- Aplicar estilos al formulario y a la tabla. -->
+    <!-- Validar los datos que se ingresen en el formulario. -->
+    <div class="contenedor">
+        <form action="">
+            <div class="cajas">
+                <label for="txtNom"></label>
+                <input type="text" name="txtNom" id="txtNom" placeholder="Nombres"><br>
+                <label for="txtApe"></label>
+                <input type="text" name="txtApe" id="txtApe" placeholder="Apellidos"><br>
+                <label for="txtDni"></label>
+                <input type="text" name="txtDni" id="txtDni" placeholder="DNI" maxlength="8">
+            </div>
+            <br>
+            <div class="despliegue">
+                <select name="cboCurso" id="cboCurso" class="select">
+                    <option value="0">Seleccione un curso</option>
+                    <option value="1">Diseño Web</option>
+                    <option value="2">Base de Datos</option>
+                    <option value="3">Programación Java</option>
+                </select>
+            </div>
+            <br>
+            <div class="radios">
+                <label for="">Turno:</label>
+                <input type="radio" name="turno" id="rbM"><label for="rbM">Mañana</label>
+                <input type="radio" name="turno" id="rbT"><label for="rbT">Tarde</label>
+                <input type="radio" name="turno" id="rbN"><label for="rbN">Noche</label>
+            </div>
+            <br>
+            
+            <div class="casilla">
+                <input type="checkbox" name="chkEst" id="chkEst">
+                <label for="chkEst">Habilitado</label>
+            </div>
+            <br>
+            <input type="button" value="Registrar" name="btnRegistrar" id="btnRegistrar" class="botonr" onclick="RegistrarAlumno()">
+            <input type="reset" value="Limpiar" name="btnLimpiar" id="btnLimpiar" class="botonl">
+        </form>
+    </div>
+    <table id="tbAlumno">
+        <thead>
+            <th>Nombres</th>
+            <th>Apellidos</th>
+            <th>DNI</th>
+            <th>Curso</th>
+            <th>Turno</th>
+            <th>Estado</th>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script src="js/alumno.js"></script>
+    <script src="js/bibliotecaalumno.js"></script>
+</body>
+</html>

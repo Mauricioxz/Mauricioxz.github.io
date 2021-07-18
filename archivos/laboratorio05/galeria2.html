@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Imágenes</title>
+    <script src="https://kit.fontawesome.com/30be2ba286.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/galeria.css">
+</head>
+<body>
+    <h1>Galería de Imágenes en una ventana modal</h1>
+    <div class="grupo">
+        <ul class="galeria">
+            <li>
+                <a href="#" data-open="modal1">
+                    <img src="img/trabajo1.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#" data-open="modal2">
+                    <img src="img/trabajo2.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#" data-open="modal3">
+                    <img src="img/trabajo3.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#" data-open="modal4">
+                    <img src="img/trabajo4.jpg" alt="">
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="ventanamodal">
+            <header class="cabeceramodal">
+                <p id="parrafocabecera"></p>
+                <button class="cerrarmodal" aria-label="cerrarmodal" data-close>
+                    <i class="far fa-times-circle"></i>
+                </button>
+            </header>
+            <section class="contenidomodal">
+                <img id="imagenmodal">
+            </section>
+            <footer class="piemodal">
+                <p id="parrafopie"></p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="js/galeria2.js" type="text/javascript"></script>
+</body>
+</html>

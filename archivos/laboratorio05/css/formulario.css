@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body{
+    font-family: 'Slabo 27px', serif;
+    font-size: 18px;
+    background-color: #f2f2f2;
+}
+
+.contenedor{
+    width: 400px;
+    margin: 40px 10%;
+    background: white;
+    border-radius: 0 0 8px 8px;
+}
+
+#tbAlumno{
+    width: 700px;
+    margin-left: 50%;
+    margin-top: -40%;
+    border: 2px solid purple;
+    position:relative;
+}
+
+thead th{
+    border: 2px solid purple;
+    background-color: rgb(166, 173, 240);
+    color: rgb(74, 41, 95);
+}
+
+tbody{
+    border: 2px solid purple;
+    text-align: center;
+    background-color: rgb(202, 169, 255);
+}
+
+.cajas{
+    padding: 20px;
+    border-radius: 6px 6px 0 0;
+    background: white;
+}
+
+input[type="text"]{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    font-family: 'Slabo 27px', serif;
+    font-size: 18px;
+}
+
+input[type="text"]:focus{
+    border-bottom: 4px solid #cd2cd3;
+}
+
+.despliegue{
+    text-align: center;
+    color: #424242;
+}
+.despliegue .select{
+    font-size: 18px;
+    font-family: 'Slabo 27px', serif;
+    padding: 10px 10px;
+    border-radius: 5px;
+    color: #424242;
+}
+
+.despliegue .select option{
+    color: #424242;
+    text-align: center;
+}
+
+.radios{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    color: #424242;
+    padding: 10px 10px;
+    text-align: center;
+    font-family: 'Slabo 27px', serif;
+    font-size: 18px;
+}
+
+.radios label{
+    margin-left: 10px;
+}
+
+/* input[type="radio"]:after+.radios label{
+    background-color: #f9a03f;
+    color: white;
+} */
+
+.casilla{
+    text-align: center;
+    color: #424242;
+}
+
+.botonr{
+    width: 50%;
+    text-align: center;
+    background: #8f24b9;
+    color: white;
+    border: none;
+    display: block;
+    padding: 15px 10px;
+    cursor: pointer;
+    border-radius: 0 8px 8px 8px;
+    font-family: 'Slabo 27px', serif;
+    font-size: 18px;
+}
+.botonl{
+    width: 50%;
+    text-align: center;
+    background: #8f24b9;
+    margin-left: 50%;
+    margin-top: -51px;
+    color: white;
+    border: none;
+    display: block;
+    padding: 15px 10px;
+    cursor: pointer;
+    border-radius: 8px 0 8px 8px;
+    font-family: 'Slabo 27px', serif;
+    font-size: 18px;
+}
+
+.botonr:hover,.botonl:hover{
+    background-color: rgb(235, 182, 36);
+}
